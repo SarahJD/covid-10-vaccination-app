@@ -6,7 +6,7 @@ const Footer = () => {
       <p>This App was built by Sarah Dudek</p>
       <Link to='/about'>About</Link>
     </footer>
-  )
+  ) 
 }
 
 export default Footer
