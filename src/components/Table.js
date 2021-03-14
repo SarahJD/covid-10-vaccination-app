@@ -7,7 +7,7 @@ const Table = ({ data }) => {
   return (
     <>
       {data.map((date) => (
-        <FedState key={date.id} fedState={date} />
+        <FedState key={date.toString()} fedState={date} />
       ))}
     </>
   )
