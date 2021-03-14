@@ -1,26 +1,14 @@
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 import { BrowserRouter as Router, Route } from 'react-router-dom';
 
 import Header from './components/Header';
 import Table from './components/Table';
 import Footer from './components/Footer';
 import About from './components/About';
+import { mockData } from './mock-data';
 
 function App() {
-  const [data, setData] = useState([
-    {
-      id: 1,
-      name: 'NRW',
-      firstVaccinationRate: 1.03,
-      secondVaccinationRate: 0.5
-    },
-    {
-      id: 2,
-      name: 'Berlin',
-      firstVaccinationRate: 2.5,
-      secondVaccinationRate: 1.2
-    }
-  ]);
+  const [data, setData] = useState(mockData);
 
   // useEffect(() => {
   //   const getTasks = async () => {
